@@ -16,16 +16,54 @@ Sistem Manajemen Toko Buku — aplikasi CLI (Command Line Interface) untuk menge
 5. **Simpan Data** — menyimulasikan proses penyimpanan data secara asynchronous ke server (menggunakan metode Future delay).
 6. **Keluar** — mengakhiri jalannya program.
 
+## 📂 Struktur Folder
+
+```text
+project_gramedia/
+├── bin/
+│   └── main.dart                 # Entry point program
+├── lib/
+│   ├── controllers/
+│   │   └── manager.dart          # Manajemen data buku
+│   ├── exceptions/
+│   │   └── data_exception.dart   # Custom exception
+│   ├── models/
+│   │   ├── buku.dart             # Abstract class Buku
+│   │   ├── buku_fiksi.dart       # Model Buku Fiksi
+│   │   └── buku_nonfiksi.dart    # Model Buku Nonfiksi
+│   └── utils/
+│       └── tools.dart            # Utility/helper program
+├── test/
+│   └── project_gramedia_test.dart
+├── .gitignore
+├── analysis_options.yaml
+├── CHANGELOG.md
+├── pubspec.yaml
+├── pubspec.lock
+└── README.md
+```
+
 ## Cara Menjalankan Program
-1. Pastikan Dart SDK sudah terinstall di komputer.
-    Cek pada terminal dengan perintah:
-    dart --version
+1. Pastikan Dart SDK sudah terinstal di komputer.
 
-2. Clone atau download project ini, lalu masuk ke folder project:
-    git clone https://github.com/helloattabik/project_gramedia
-    cd project_gramedia
+   Cek versi Dart:
 
-3. Jalankan program dengan perintah:
-    dart run
+   ```bash
+   dart --version
+   ```
 
-4. Program akan menampilkan antarmuka menu di terminal. Pilih angka 1-6 sesuai fitur yan
+2. Clone repository, lalu masuk ke folder project.
+
+   ```bash
+   git clone https://github.com/helloattabik/project_gramedia.git
+   cd project_gramedia
+   ```
+
+3. Jalankan program.
+
+   ```bash
+   dart run
+   ```
+
+4. Program akan menampilkan antarmuka menu di terminal. Pilih menu **1–6** sesuai fitur yang tersedia.
+

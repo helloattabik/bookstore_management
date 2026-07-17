@@ -1,26 +1,32 @@
-import '../exceptions/data_exception.dart';
+import 'package:bookstore/exceptions/except.dart';
 
-abstract class Buku {
-  String _judul;
-  double _harga;
+abstract class Books{
+  String _title;
+  String _writer;
+  String _publisher;
+  double _price;
 
-  Buku(this._judul, this._harga) {
-    if (_harga < 0) throw DataException('Harga tidak boleh negatif!');
-    if (_judul.trim().isEmpty) throw DataException('Judul tidak boleh kosong!');
+  Books(this._title, this._writer, this._publisher, this._price){
+    if (_price <= 0) throw DataException('[ERROR] Price must be more than Rp. 0');
+    if (_title.trim().isEmpty) throw DataException('[ERROR] Title cannot be empty');
   }
 
-  String get judul => _judul;
-  double get harga => _harga;
+  String get title => _title;
+  String get writer => _writer;
+  String get publisher => _publisher;
+  double get price => _price;
 
-  set judul(String value) {
-    if (value.trim().isEmpty) throw DataException('Judul tidak boleh kosong!');
-    _judul = value;
+  // Set Title
+  set title(String newTitle) {
+    if (newTitle.trim().isNotEmpty) _title = newTitle;
+    else throw DataException('[ERROR] Title cannot be empty');
   }
 
-  set harga(double value) {
-    if (value < 0) throw DataException('Harga tidak boleh negatif!');
-    _harga = value;
+  // Set Price
+  set price(double newPrice) {
+    if (newPrice >= 0) _price = newPrice;
+    else throw DataException('[ERROR] Price must be more than Rp. 0');
   }
 
-  void tampilkanInfo();
+  void showInformation();
 }

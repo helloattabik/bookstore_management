@@ -1,35 +1,56 @@
 import 'dart:io';
 
-int screen = 100;
-int width = screen - 2;
+const int screenWidth = 100;
+const int contentWidth = screenWidth - 2;
+const String padding = '  ';
 
 void divider(String type) {
-  if (type == 'top') {
-    print('┌' + '─' * width + '┐');
-  } else if (type == 'bottom') {
-    print('└' + '─' * width + '┘');
+  if (type == 'top')            print('┌${'─' * contentWidth}┐');
+  else if (type == 'bottom')    print('└${'─' * contentWidth}┘');
+  else if (type == 'middle')    print('├${'─' * contentWidth}┤');
+  else if (type == 'noborder')  print('─${'─' * contentWidth}─');
+}
+
+
+void text(String text, {String align = 'left'}) {
+  if (align == 'center') {
+    int leftSpace = ((contentWidth - text.length) / 2).toInt();
+    print('│${' ' * leftSpace}${text.toUpperCase().padRight(contentWidth - leftSpace)}│');
+  } else if (align == 'right') {
+    print('│${text.padLeft(contentWidth - padding.length)}$padding│');
   } else {
-    print('|' + '─' * width + '|');
   }
 }
 
-void centerText(String text) {
-  int spacing = ((width - text.length) / 2).toInt();
-  print('│' + (' ' * spacing) + text.toUpperCase().padRight(width - spacing) + '│');
-}
-
-void leftText(String text) {
-  int spacing = ((width - text.length) - 2).toInt();
-  print('│  ' + text + ' ' * spacing + '│');
+void title(String text) {
+  divider('top');
+  print('│$padding${text.toUpperCase().padRight(contentWidth - padding.length)}│');
+  divider('middle');
 }
 
 void printHeading(String text) {
-  int spacing = ((width - text.length) / 2).toInt();
   divider('top');
-  print('│' + (' ' * spacing) + text.toUpperCase().padRight(width - spacing) + '│');
+  print('│$padding${text.toUpperCase().padRight(contentWidth - padding.length)}│');
   divider('bottom');
 }
 
-void textInput(String text) {
-  stdout.write('${text.toUpperCase().padRight(40)}: ');
+
+void leftText(String text) {
+  print('│$padding${text.padRight(contentWidth - padding.length)}│');
+}
+
+String stringInput(String value, {int tab = 10}) {
+  stdout.write(' $padding${value.padRight(tab)} : ');
+  return stdin.readLineSync() ?? '';
+}
+
+double doubleInput(String text, {int tab = 10}) {
+  while (true) {
+    stdout.write(' $padding${text.padRight(tab)} : ');
+    var value = double.tryParse(stdin.readLineSync() ?? '');
+    if (value != null) {
+      return value;
+    }
+    print('\n  [ERROR] Please enter a valid number.\n');
+  }
 }

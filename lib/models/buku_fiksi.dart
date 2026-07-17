@@ -1,12 +1,11 @@
-import 'buku.dart';
+import 'package:bookstore/models/buku.dart';
 
-class BukuFiksi extends Buku {
+class FictionBook extends Books {
   String genre;
-
-  BukuFiksi(String judul, double harga, this.genre) : super(judul, harga);
-
+  FictionBook(String title, String writer, String publisher, double price, this.genre) : super(title, writer, publisher, price);
+  
   @override
-  void tampilkanInfo() {
-    print('  ${'[FIKSI]'.padRight(11)} | ${judul.padRight(44)} | ${'Rp. ${harga.toInt()}'.padRight(12)} | ${genre.padRight(20)} |');
+  void showInformation() {
+    print('  ${'[FIKSI]'.padRight(11)} | ${title.padRight(44)} | ${'Rp. ${price.toInt()}'.padRight(12)} | ${genre.padRight(20)} |');
   }
 }

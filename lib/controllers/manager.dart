@@ -1,38 +1,38 @@
-import '../models/buku.dart';
+import 'package:bookstore/models/buku.dart';
 
 class Manager {
-  final List<Buku> koleksiBuku = [];
+  final List<Books> BookStorage = [];
 
-  void tambah(Buku buku) {
-    koleksiBuku.add(buku);
+  void addBook(Books addBook) {
+    BookStorage.add(addBook);
     print('\n  [INFO] Buku berhasil ditambahkan!');
   }
 
   void tampilkanSemua() {
-    if (koleksiBuku.isEmpty) {
+    if (BookStorage.isEmpty) {
       print('  Kosong. Belum ada data buku.');
       return;
     }
-    for (var buku in koleksiBuku) {
-      buku.tampilkanInfo(); 
+    for (var buku in BookStorage) {
+      buku.showInformation(); 
     }
   }
 
   void cari(String keyword) {
-    var hasil = koleksiBuku.where((buku) => 
-        buku.judul.toLowerCase().contains(keyword.toLowerCase())).toList();
+    var hasil = BookStorage.where((buku) => 
+        buku.title.toLowerCase().contains(keyword.toLowerCase())).toList();
     
     if (hasil.isEmpty) {
       print('  Buku dengan judul "$keyword" tidak ditemukan.');
     } else {
       for (var buku in hasil) {
-        buku.tampilkanInfo();
+        buku.showInformation();
       }
     }
   }
 
   double hitungTotalAset() {
-    return koleksiBuku.fold(0, (total, buku) => total + buku.harga);
+    return BookStorage.fold(0, (total, buku) => total + buku.price);
   }
 
   Future<void> simpanData() async {
@@ -41,3 +41,6 @@ class Manager {
     print('  [INFO] Data berhasil disimpan!');
   }
 }
+
+
+

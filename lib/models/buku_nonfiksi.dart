@@ -1,12 +1,12 @@
-import 'buku.dart';
+import 'package:bookstore/models/buku.dart';
 
-class BukuNonFiksi extends Buku {
+class NonFictionBook extends Books {
   String bidangIlmu;
 
-  BukuNonFiksi(String judul, double harga, this.bidangIlmu) : super(judul, harga);
+  NonFictionBook(String title, String writer, String publisher, double price, this.bidangIlmu) : super(title, writer, publisher, price);
 
   @override
-  void tampilkanInfo() {
-    print('  ${'[NON-FIKSI]'.padRight(11)} | ${judul.padRight(44)} | ${'Rp. ${harga.toInt()}'.padRight(12)} | ${bidangIlmu.padRight(20)} |');
+  void showInformation() {
+    print('  ${'[NON-FIKSI]'.padRight(11)} | ${title.padRight(44)} | ${'Rp. ${price.toInt()}'.padRight(12)} | ${bidangIlmu.padRight(20)} |');
   }
 }

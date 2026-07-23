@@ -1,4 +1,4 @@
-import 'package:main/models/buku.dart';
+import 'package:bookstore/models/buku.dart';
 
 class FictionBook extends Books {
   String genre;

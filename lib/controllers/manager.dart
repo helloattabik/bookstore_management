@@ -1,4 +1,4 @@
-import 'package:main/models/buku.dart';
+import 'package:bookstore/models/buku.dart';
 
 class Manager {
   final List<Books> BookStorage = [];

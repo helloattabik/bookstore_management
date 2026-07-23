@@ -1,9 +1,9 @@
 import 'dart:io';
-import 'package:main/exceptions/except.dart';
-import 'package:main/utils/tools.dart';
-import 'package:main/controllers/manager.dart';
-import 'package:main/models/buku_fiksi.dart';
-import 'package:main/models/buku_nonfiksi.dart';
+import 'package:bookstore/exceptions/except.dart';
+import 'package:bookstore/utils/tools.dart';
+import 'package:bookstore/controllers/manager.dart';
+import 'package:bookstore/models/buku_fiksi.dart';
+import 'package:bookstore/models/buku_nonfiksi.dart';
 
 void main() async {
   while (true) {

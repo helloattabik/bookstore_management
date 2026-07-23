@@ -7,10 +7,28 @@
 <hr style="border:3px solid black;">
 
 ## Biodata
-<p>Nama            : Tri Misbachul Attabik</p>
-<p>NIM             : 251240001637</p>
-<p>Program Studi   : Teknik Informatika</p>
-  
+<table>
+<tr>
+<td><b>Nama</b></td>
+<td>: Tri Misbachul Attabik</td>
+</tr>
+
+<tr>
+<td><b>NIM</b></td>
+<td>: 251240001637</td>
+</tr>
+
+<tr>
+<td><b>Program Studi</b></td>
+<td>: Teknik Informatika</td>
+</tr>
+
+<tr>
+<td><b>Universitas</b></td>
+<td>: UNISNU Jepara</td>
+</tr>
+</table>
+
 ## Tema Aplikasi
 Bookstore - Aplikasi CLI untuk mengelola data invetoris buku.
 

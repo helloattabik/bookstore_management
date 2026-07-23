@@ -72,3 +72,8 @@ project_gramedia/
 ```bash
     #objectorientedprogramming #uas #unisnujepara
    ```
+
+
+## To-Do Feature
+1. Update Book                [On Progress]
+2. Delete Book                [On Progress]

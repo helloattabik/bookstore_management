@@ -8,12 +8,16 @@ import 'package:bookstore/models/buku_nonfiksi.dart';
 void main() async {  
   await manager.loadData();
   while (true) {
-    title('bookstore management');
-    leftText('');
-    leftText('${'[1] Add Book'.padRight(30)}[4] Calc Assets');
-    leftText('${'[2] Show Inventory'.padRight(30)}[5] Save');
-    leftText('${'[3] Search Book'.padRight(30)}[0] Exit');
-    leftText('');
+    divider('top');
+    printText('');
+    printText('bookstore management', align: 'center');
+    printText('');
+    divider('middle');
+    printText('');
+    printText('${'[1] Add Book'.padRight(30)}[4] Calc Assets');
+    printText('${'[2] Show Inventory'.padRight(30)}[5] Save');
+    printText('${'[3] Search Book'.padRight(30)}[0] Exit');
+    printText('');
     divider('bottom');
     String? select = stringInput('Select');
     
@@ -58,16 +62,24 @@ Future<void> addBook() async {
 }
 
 void displayBooks(){
-  printHeading('etalase toko buku');
+  divider('top');
+  printText('');
+  printText('display books', align: 'center');
+  printText('');
   manager.displayBooks();
-  pause(message: 'Press Enter to main menu...');
+  pause();
 }
 
 void seacrhBook(){
-  printHeading('cari buku');
+  divider('top');
+  printText('');
+  printText('search book', align: 'center');
+  printText('');
+  divider('bottom');
   String keyword = stringInput('Keyword');;
   print('');
   manager.searchBook(keyword);
+  pause();
 }
 
 void calculateTotalAssets(){

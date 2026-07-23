@@ -23,7 +23,7 @@ class Manager {
       return;
     }
 
-    divider('top');
+    divider('middle');
     print('│ ${'Type'.padRight(15)} │ ${'Title'.padRight(44)} │ ${'Price'.padRight(12)} │ ${'Genre/Topics'.padRight(36)} │');
     divider('middle');
     for (Books book in bookStorage) book.showInformation();
@@ -40,9 +40,13 @@ class Manager {
       return;
     }
 
+    divider('top');
+    print('│ ${'Type'.padRight(15)} │ ${'Title'.padRight(44)} │ ${'Price'.padRight(12)} │ ${'Genre/Topics'.padRight(36)} │');
+    divider('middle');
     for (Books book in result) {
       book.showInformation();
     }
+    divider('bottom');
   }
 
   double calculateTotalAssets() {

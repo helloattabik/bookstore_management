@@ -18,15 +18,11 @@ void printText(String text, {String align = 'left'}) {
     print('│${' ' * leftSpace}${text.toUpperCase().padRight(contentWidth - leftSpace)}│');
   } else if (align == 'right') {
     print('│${text.padLeft(contentWidth - padding.length)}$padding│');
-  } else {
+  } else if (align == 'left'){
+    print('│$padding${text.padRight(contentWidth - padding.length)}│');
   }
 }
 
-void title(String text) {
-  divider('top');
-  print('│$padding${text.toUpperCase().padRight(contentWidth - padding.length)}│');
-  divider('middle');
-}
 
 void printHeading(String text) {
   divider('top');
@@ -34,10 +30,6 @@ void printHeading(String text) {
   divider('bottom');
 }
 
-
-void leftText(String text) {
-  print('│$padding${text.padRight(contentWidth - padding.length)}│');
-}
 
 String stringInput(String value, {int tab = 10}) {
   stdout.write(' $padding${value.padRight(tab)} : ');
@@ -55,7 +47,7 @@ double doubleInput(String text, {int tab = 10}) {
   }
 }
 
-void pause({String message='Press Enter to continue...'}) {
+void pause({String message='Press Enter to main menu...'}) {
   print('\n${message}');
   stdin.readLineSync();
 }

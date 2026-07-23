@@ -28,10 +28,8 @@
 <h3>Tema Aplikasi</h3>
 Bookstore - Aplikasi CLI untuk mengelola data inventaris buku.
 
+<hr>
 <h3>Fitur</h3>
-
-<h2>Fitur</h2>
-
 <table>
   <thead>
     <tr>

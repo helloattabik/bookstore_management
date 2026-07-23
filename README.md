@@ -25,12 +25,12 @@
 
 </table>
 
+<hr>
 <h3>Tema Aplikasi</h3>
 Bookstore - Aplikasi CLI untuk mengelola data inventaris buku.
 
+<hr>
 <h3>Fitur</h3>
-
-<h2>Fitur</h2>
 
 <table>
   <thead>
@@ -74,13 +74,7 @@ Bookstore - Aplikasi CLI untuk mengelola data inventaris buku.
   </tbody>
 </table>
 
-1. **Tambah Data Buku** — menambahkan produk buku baru (Fiksi atau Non-Fiksi) lengkap dengan validasi input (judul tidak boleh kosong, harga harus berupa angka dan tidak boleh negatif).
-2. **Lihat Semua Data** — menampilkan etalase seluruh buku yang tersimpan dalam format tabel yang sejajar dan rapi.
-3. **Cari Data** — mencari spesifik buku berdasarkan kata kunci judul.
-4. **Hitung Total Aset** — mengkalkulasi dan menampilkan jumlah total nilai aset buku (akumulasi dari harga seluruh buku yang terdaftar).
-5. **Simpan Data** — menyimulasikan proses penyimpanan data secara asynchronous ke server (menggunakan metode Future delay).
-6. **Keluar** — mengakhiri jalannya program.
-
+<hr>
 <h3>Struktur Folder</h3>
 
 ```text

@@ -6,27 +6,23 @@
 
 <hr style="border:3px solid black;">
 
-<h3>Biodata</h3>h3>
+<h3>Biodata</h3>
 <table>
 <tr>
 <td><b>Nama</b></td>
-<td>: Tri Misbachul Attabik</td>
+<td>Tri Misbachul Attabik</td>
 </tr>
 
 <tr>
 <td><b>NIM</b></td>
-<td>: 251240001637</td>
+<td>251240001637</td>
 </tr>
 
 <tr>
 <td><b>Program Studi</b></td>
-<td>: Teknik Informatika</td>
+<td>Teknik Informatika</td>
 </tr>
 
-<tr>
-<td><b>Universitas</b></td>
-<td>: UNISNU Jepara</td>
-</tr>
 </table>
 
 ## Tema Aplikasi

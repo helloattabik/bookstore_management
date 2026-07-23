@@ -6,7 +6,7 @@
 
 <hr style="border:3px solid black;">
 
-<h3>Biodata</h3>
+## Biodata
 <table>
 <tr>
 <td><b>Nama</b></td>
@@ -25,13 +25,11 @@
 
 </table>
 
-<hr>
-<h3>Tema Aplikasi</h3>
+## Tema Aplikasi
 Bookstore - Aplikasi CLI untuk mengelola data inventaris buku.
 
 <hr>
 <h3>Fitur</h3>
-
 <table>
   <thead>
     <tr>
@@ -74,8 +72,8 @@ Bookstore - Aplikasi CLI untuk mengelola data inventaris buku.
   </tbody>
 </table>
 
-<hr>
-<h3>Struktur Folder</h3>
+
+## Struktur Folder
 
 ```text
 BOOKSTORE_MANAGEMENT/
@@ -142,6 +140,7 @@ BOOKSTORE_MANAGEMENT/
 ## To-Do Feature
 1. Update Book                [On Progress]
 2. Delete Book                [On Progress]
+
 
 **Tags:**  
 `#UNISNUJEPARA` `#TEKNIKINFORMATIKA` `#PEMROGRAMANBERBASISOBJEK` `#DART` `#OOP`

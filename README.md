@@ -25,10 +25,11 @@
 
 </table>
 
-## Tema Aplikasi
-Bookstore - Aplikasi CLI untuk mengelola data invetoris buku.
+<h3>Tema Aplikasi</h3>
+Bookstore - Aplikasi CLI untuk mengelola data inventaris buku.
 
-## Fitur Program
+<h3>Fitur</h3>
+
 1. **Tambah Data Buku** — menambahkan produk buku baru (Fiksi atau Non-Fiksi) lengkap dengan validasi input (judul tidak boleh kosong, harga harus berupa angka dan tidak boleh negatif).
 2. **Lihat Semua Data** — menampilkan etalase seluruh buku yang tersimpan dalam format tabel yang sejajar dan rapi.
 3. **Cari Data** — mencari spesifik buku berdasarkan kata kunci judul.
@@ -36,30 +37,43 @@ Bookstore - Aplikasi CLI untuk mengelola data invetoris buku.
 5. **Simpan Data** — menyimulasikan proses penyimpanan data secara asynchronous ke server (menggunakan metode Future delay).
 6. **Keluar** — mengakhiri jalannya program.
 
-## 📂 Struktur Folder
+<h3>Struktur Folder</h3>
 
 ```text
-project_gramedia/
+BOOKSTORE_MANAGEMENT/
+├── .dart_tool/
+│   ├── pub/
+│   └── package_config.json
+│
 ├── bin/
-│   └── bookstore.dart            # this main
+│   └── bookstore.dart
+│
+├── data/
+│   └── db_books.json
+│
 ├── lib/
 │   ├── controllers/
-│   │   └── manager.dart          # for controll action
+│   │   └── manager.dart
+│   │
 │   ├── exceptions/
-│   │   └── except.dart           # Custom exception
+│   │   └── except.dart
+│   │
 │   ├── models/
-│   │   ├── buku.dart             # Abstract Class Buku
-│   │   ├── buku_fiksi.dart       # Class : Fiction Book
-│   │   └── buku_nonfiksi.dart    # Class : NonFiction Book
+│   │   ├── buku.dart
+│   │   ├── buku_fiksi.dart
+│   │   └── buku_nonfiksi.dart
+│   │
 │   └── utils/
-│       └── tools.dart            # this code for set layout
+│       └── tools.dart
+│
 ├── test/
-│   └── project_gramedia_test.dart
+│   └── bookstore_management_test.dart
+│
 ├── .gitignore
 ├── analysis_options.yaml
 ├── CHANGELOG.md
-├── pubspec.yaml
 ├── pubspec.lock
+├── pubspec.yaml
 └── README.md
 ```
 
@@ -75,7 +89,7 @@ project_gramedia/
 2. Clone repository, lalu masuk ke folder project.
 
    ```bash
-   git clone https://github.com/helloattabik/project_gramedia.git
+   git clone https://github.com/helloattabik/bookstore_management.git
    cd project_gramedia
    ```
 

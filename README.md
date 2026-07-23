@@ -1,7 +1,7 @@
 <div align='center'>
 <h1 align='center'> UAS Pemrograman Berorientasi Objek </h1>
-Program ini dikerjakan untuk memenuhi UAS Semester 2 Mata Kuliah Pemrograman Beroientasi Objek
-Dosen Pengampu Harminto Mulyo, S.Kom., M.Kom.
+<p>Program ini dikerjakan untuk memenuhi UAS Semester 2 Mata Kuliah Pemrograman Beroientasi Objek </p>
+<p>Dosen Pengampu Harminto Mulyo, S.Kom., M.Kom. </p>
 </div>
 
 <hr style="border:3px solid black;">

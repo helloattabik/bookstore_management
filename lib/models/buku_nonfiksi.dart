@@ -1,4 +1,4 @@
-import 'package:bookstore/models/buku.dart';
+import 'package:main/models/buku.dart';
 
 class NonFictionBook extends Books {
   String bidangIlmu;

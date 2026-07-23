@@ -6,7 +6,7 @@
 - NIM  : 251240001637
 
 ## Tema Aplikasi
-Sistem Manajemen Toko Buku — aplikasi CLI (Command Line Interface) untuk mengelola data inventaris buku yang dijual di Gramedia Bookstore. Sistem ini mencakup pengelolaan buku berdasarkan kategori, yaitu Buku Fiksi dan Buku Non-Fiksi, dengan penerapan konsep OOP (Pemrograman Berorientasi Objek) secara menyeluruh.
+Bookstore - Aplikasi CLI untuk mengelola data invetoris buku.
 
 ## Fitur Program
 1. **Tambah Data Buku** — menambahkan produk buku baru (Fiksi atau Non-Fiksi) lengkap dengan validasi input (judul tidak boleh kosong, harga harus berupa angka dan tidak boleh negatif).
@@ -21,16 +21,16 @@ Sistem Manajemen Toko Buku — aplikasi CLI (Command Line Interface) untuk menge
 ```text
 project_gramedia/
 ├── bin/
-│   └── main.dart                 # Entry point program
+│   └── bookstore.dart            # Main program
 ├── lib/
 │   ├── controllers/
 │   │   └── manager.dart          # Manajemen data buku
 │   ├── exceptions/
-│   │   └── data_exception.dart   # Custom exception
+│   │   └── except.dart           # Custom exception
 │   ├── models/
-│   │   ├── buku.dart             # Abstract class Buku
-│   │   ├── buku_fiksi.dart       # Model Buku Fiksi
-│   │   └── buku_nonfiksi.dart    # Model Buku Nonfiksi
+│   │   ├── buku.dart             # Abstract Class Buku
+│   │   ├── buku_fiksi.dart       # Class : Fiction Book
+│   │   └── buku_nonfiksi.dart    # Class : NonFiction Book
 │   └── utils/
 │       └── tools.dart            # Utility/helper program
 ├── test/

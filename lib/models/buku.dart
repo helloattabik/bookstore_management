@@ -29,4 +29,13 @@ abstract class Books{
   }
 
   void showInformation();
+  
+  Map<String, dynamic> toJson() {
+  return {
+    "title": title,
+    "writer": writer,
+    "publisher": publisher,
+    "price": price,
+  };
+}
 }

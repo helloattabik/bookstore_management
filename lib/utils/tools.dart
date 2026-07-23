@@ -1,6 +1,6 @@
 import 'dart:io';
 
-const int screenWidth = 100;
+const int screenWidth = 120;
 const int contentWidth = screenWidth - 2;
 const String padding = '  ';
 
@@ -12,7 +12,7 @@ void divider(String type) {
 }
 
 
-void text(String text, {String align = 'left'}) {
+void printText(String text, {String align = 'left'}) {
   if (align == 'center') {
     int leftSpace = ((contentWidth - text.length) / 2).toInt();
     print('│${' ' * leftSpace}${text.toUpperCase().padRight(contentWidth - leftSpace)}│');
@@ -51,6 +51,11 @@ double doubleInput(String text, {int tab = 10}) {
     if (value != null) {
       return value;
     }
-    print('\n  [ERROR] Please enter a valid number.\n');
+    print('\n[ERROR] Please enter a valid number.\n');
   }
+}
+
+void pause({String message='Press Enter to continue...'}) {
+  print('\n${message}');
+  stdin.readLineSync();
 }

@@ -5,7 +5,8 @@ import 'package:bookstore/controllers/manager.dart';
 import 'package:bookstore/models/buku_fiksi.dart';
 import 'package:bookstore/models/buku_nonfiksi.dart';
 
-void main() async {
+void main() async {  
+  await manager.loadData();
   while (true) {
     title('bookstore management');
     leftText('');
@@ -17,70 +18,71 @@ void main() async {
     String? select = stringInput('Select');
     
     try {
-      if      (select == '1') addBook();
-      else if (select == '2') showBooks();
+      if      (select == '1') await addBook();
+      else if (select == '2') displayBooks();
       else if (select == '3') seacrhBook();
-      else if (select == '4') calcAssets();
+      else if (select == '4') calculateTotalAssets();
       else if (select == '5') await saveData();
       else if (select == '0') quitPage();
       else {
-        print('\n  [INFO] Pilihan menu tidak tersedia.');
+        print('[INFO] Pilihan menu tidak tersedia.');
       }
     } on DataException catch (e) {
-      print('\n  [GAGAL]: ${e.message}');
+      print('[GAGAL]: ${e.message}');
     } catch (e) {
-      print('\n  [TERJADI KESALAHAN]: $e');
+      print('[TERJADI KESALAHAN]: $e');
     }
     
   } 
 }
 
 final manager = Manager();
-    void addBook() {
-      printHeading('add book');
-      String category = stringInput('Category | [1] Fiksi [2] Non-Fiksi |');
-      divider('noborder');
-      if (category == '1' || category == '2') {
-        String title = stringInput('Title');
-        String writer = stringInput('Writer');
-        String publisher = stringInput('Publisher');
-        double? price = doubleInput('Price');
-        if (category == '1') {
-          String genre = stringInput('Genre');
-          manager.addBook(FictionBook(title, writer, publisher, price, genre));
-        } else {
-          String topic = stringInput('topic');
-          manager.addBook(NonFictionBook(title, writer, publisher, price, topic));
-        }
-      } 
-      else throw DataException('[ERROR] Invalid selection');
+Future<void> addBook() async {
+  printHeading('add book');
+  String category = stringInput('Category | [1] Fiksi [2] Non-Fiksi |');
+  divider('noborder');
+  if (category == '1' || category == '2') {
+    String title = stringInput('Title');
+    String writer = stringInput('Writer');
+    String publisher = stringInput('Publisher');
+    double? price = doubleInput('Price');
+    if (category == '1') {
+      String genre = stringInput('Genre');
+      await manager.addBook(FictionBook(title, writer, publisher, price, genre));
+    } else {
+      String topic = stringInput('topic');
+      await manager.addBook(NonFictionBook(title, writer, publisher, price, topic));
     }
- 
-    void showBooks(){
-      printHeading('etalase toko buku');
-      manager.tampilkanSemua();
-    }
-    
-    void seacrhBook(){
-      printHeading('cari buku');
-      String keyword = stringInput('Keyword');;
-      print('');
-      manager.cari(keyword);
-    }
+  } 
+  else throw DataException('[ERROR] Invalid selection');
+}
 
-    void calcAssets(){
-      printHeading('hitung total aset');
-      print('  Total Aset Gudang: Rp. ${manager.hitungTotalAset().toInt()}');    
-    }
+void displayBooks(){
+  printHeading('etalase toko buku');
+  manager.displayBooks();
+  pause(message: 'Press Enter to main menu...');
+}
 
-    Future<void> saveData() async {
-      printHeading('simpan data');
-      await manager.simpanData();
-    }
+void seacrhBook(){
+  printHeading('cari buku');
+  String keyword = stringInput('Keyword');;
+  print('');
+  manager.searchBook(keyword);
+}
 
-    void quitPage(){
-      print('\n  Terima kasih telah menggunakan sistem ini. Sampai jumpa!');
-      exit(0); 
-    }
+void calculateTotalAssets(){
+  printHeading('hitung total aset');
+  print('  Total Aset Gudang: Rp. ${manager.calculateTotalAssets().toInt()}');    
+}
+
+Future<void> saveData() async {
+  printHeading('simpan data');
+  await manager.saveData();
+}
+
+void quitPage(){
+  print('\n  Terima kasih telah menggunakan sistem ini. Sampai jumpa!');
+  exit(0); 
+}
 
 

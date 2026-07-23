@@ -67,7 +67,7 @@ project_gramedia/
    dart run
    ```
 
-4. Program akan menampilkan antarmuka menu di terminal. Pilih menu **1–6** sesuai fitur yang tersedia.
+4. Program ini akan menampilkan pilihan menu sesuai dengan fitur yang tersedia
 
 ```bash
     #objectorientedprogramming #uas #unisnujepara

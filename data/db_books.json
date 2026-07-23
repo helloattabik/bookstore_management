@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "writer": "J.K. Rowling",
+    "publisher": "Bloomsbury",
+    "price": 125000.0,
+    "type": "fiction",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Laskar Pelangi",
+    "writer": "Andrea Hirata",
+    "publisher": "Bentang Pustaka",
+    "price": 98000.0,
+    "type": "fiction",
+    "genre": "Drama"
+  },
+  {
+    "title": "The Hobbit",
+    "writer": "J.R.R. Tolkien",
+    "publisher": "HarperCollins",
+    "price": 145000.0,
+    "type": "fiction",
+    "genre": "Adventure"
+  },
+  {
+    "title": "Bumi",
+    "writer": "Tere Liye",
+    "publisher": "Gramedia Pustaka Utama",
+    "price": 110000.0,
+    "type": "fiction",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Clean Code",
+    "writer": "Robert C. Martin",
+    "publisher": "Prentice Hall",
+    "price": 235000.0,
+    "type": "Non-Fiction",
+    "topic": "Programming"
+  },
+  {
+    "title": "Atomic Habits",
+    "writer": "James Clear",
+    "publisher": "Avery",
+    "price": 185000.0,
+    "type": "Non-Fiction",
+    "topic": "Self Improvement"
+  },
+  {
+    "title": "Deep Learning with Python",
+    "writer": "Francois Chollet",
+    "publisher": "Manning",
+    "price": 320000.0,
+    "type": "Non-Fiction",
+    "topic": "Artificial Intelligence"
+  },
+  {
+    "title": "Computer Networking: A Top-Down Approach",
+    "writer": "James F. Kurose",
+    "publisher": "Pearson",
+    "price": 415000.0,
+    "type": "Non-Fiction",
+    "topic": "Networking"
+  }
+]

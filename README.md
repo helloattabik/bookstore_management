@@ -69,11 +69,9 @@ project_gramedia/
 
 4. Program ini akan menampilkan pilihan menu sesuai dengan fitur yang tersedia
 
-```bash
-    #objectorientedprogramming #uas #unisnujepara
-   ```
-
-
 ## To-Do Feature
 1. Update Book                [On Progress]
 2. Delete Book                [On Progress]
+
+**Tags:**  
+`#UNISNUJEPARA` `#TEKNIKINFORMATIKA` `#PEMROGRAMANBERBASISOBJEK` `#DART` `#OOP`

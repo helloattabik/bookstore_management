@@ -1,7 +1,9 @@
-# Gramedia Bookstore — Aplikasi CLI (Command Line Interface)
-# UAS Pemrograman Berorientasi Objek (Dart)
 
-## Nama dan NIM
+# UAS Pemrograman Berorientasi Objek
+Program ini dikerjakan untuk memenuhi UAS Semester 2 Mata Kuliah Pemrograman Beroientasi Objek
+Dosen Pengampu Harminto Mulyo, S.Kom., M.Kom.
+
+## Biodata
 - Nama : Tri Misbachul Attabik
 - NIM  : 251240001637
 
@@ -21,10 +23,10 @@ Bookstore - Aplikasi CLI untuk mengelola data invetoris buku.
 ```text
 project_gramedia/
 ├── bin/
-│   └── bookstore.dart            # Main program
+│   └── bookstore.dart            # this main
 ├── lib/
 │   ├── controllers/
-│   │   └── manager.dart          # Manajemen data buku
+│   │   └── manager.dart          # for controll action
 │   ├── exceptions/
 │   │   └── except.dart           # Custom exception
 │   ├── models/
@@ -32,7 +34,7 @@ project_gramedia/
 │   │   ├── buku_fiksi.dart       # Class : Fiction Book
 │   │   └── buku_nonfiksi.dart    # Class : NonFiction Book
 │   └── utils/
-│       └── tools.dart            # Utility/helper program
+│       └── tools.dart            # this code for set layout
 ├── test/
 │   └── project_gramedia_test.dart
 ├── .gitignore

@@ -7,9 +7,9 @@
 <hr style="border:3px solid black;">
 
 ## Biodata
-- `Nama           ` : Tri Misbachul Attabik
-- `NIM            ` : 251240001637
-- `Program Studi  ` : Teknik Informatika
+Nama            : Tri Misbachul Attabik
+NIM             : 251240001637
+Program Studi   : Teknik Informatika
   
 ## Tema Aplikasi
 Bookstore - Aplikasi CLI untuk mengelola data invetoris buku.

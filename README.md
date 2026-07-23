@@ -4,7 +4,7 @@ Program ini dikerjakan untuk memenuhi UAS Semester 2 Mata Kuliah Pemrograman Ber
 Dosen Pengampu Harminto Mulyo, S.Kom., M.Kom.
 </div>
 
-<br>
+<hr style="border:3px solid black;">
 
 ## Biodata
 - Nama : Tri Misbachul Attabik

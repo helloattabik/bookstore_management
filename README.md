@@ -6,7 +6,7 @@
 
 <hr style="border:3px solid black;">
 
-## Biodata
+<h3>Biodata</h3>h3>
 <table>
 <tr>
 <td><b>Nama</b></td>

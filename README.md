@@ -30,6 +30,50 @@ Bookstore - Aplikasi CLI untuk mengelola data inventaris buku.
 
 <h3>Fitur</h3>
 
+<h2>Fitur</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Fitur</th>
+      <th>Deskripsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Add Book</td>
+      <td>Menambahkan data buku baru ke dalam file <code>db_books.json</code></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Show Inventory</td>
+      <td>Menampilkan daftar seluruh buku yang tersimpan pada <code>db_books.json</code></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Search Book</td>
+      <td>Mencari data buku berdasarkan nama buku dari <code>db_books.json</code></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Calc Assets</td>
+      <td>Menghitung total aset buku dalam satuan Rupiah</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Save</td>
+      <td>Menyimpan data buku (hard code) ke dalam <code>db_books.json</code></td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>Exit</td>
+      <td>Keluar dari program dengan menjalankan fungsi <code>exit(0)</code></td>
+    </tr>
+  </tbody>
+</table>
+
 1. **Tambah Data Buku** — menambahkan produk buku baru (Fiksi atau Non-Fiksi) lengkap dengan validasi input (judul tidak boleh kosong, harga harus berupa angka dan tidak boleh negatif).
 2. **Lihat Semua Data** — menampilkan etalase seluruh buku yang tersimpan dalam format tabel yang sejajar dan rapi.
 3. **Cari Data** — mencari spesifik buku berdasarkan kata kunci judul.
